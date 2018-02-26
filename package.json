@@ -1,0 +1,32 @@
+{
+  "name": "feather",
+  "version": "1.0.0",
+  "description": "pwa博客",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImmortalLark/feather.git"
+  },
+  "keywords": [
+    "blog",
+    "pwa"
+  ],
+  "author": "lark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ImmortalLark/feather/issues"
+  },
+  "homepage": "https://github.com/ImmortalLark/feather#readme",
+  "dependencies": {
+    "@nestjs/common": "^4.6.4",
+    "@nestjs/core": "^4.6.4",
+    "@nestjs/microservices": "^4.6.4",
+    "@nestjs/testing": "^4.6.1",
+    "@nestjs/websockets": "^4.5.8",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^5.5.6"
+  }
+}
