@@ -4,7 +4,7 @@ import {
   Param
  } from "@nestjs/common"
 
-@Controller("Artical")
+@Controller("artical")
 export default class ArticalController {
   // 文章列表
   @HttpCode(HttpStatus.OK)
