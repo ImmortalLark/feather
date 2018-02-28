@@ -1,7 +1,12 @@
-import { Controller, Get, Post, Put, Delete, HttpStatus, HttpCode } from "@nestjs/common"
+import { 
+  Controller,  HttpStatus, HttpCode,
+  Get, Post, Put, Delete,
+  Param
+ } from "@nestjs/common"
 
 @Controller("Artical")
 export default class ArticalController {
+  // 文章列表
   @HttpCode(HttpStatus.OK)
   @Get()
   findAll() {
@@ -9,24 +14,35 @@ export default class ArticalController {
     return [];
   }
 
+  // 文章详情
+  @HttpCode(HttpStatus.OK)
+  @Get(":id")
+  findOne(@Param() params) {
+    // @todo service artical.findOne
+    return params.id;
+  }
+
+  // 创建文章
   @HttpCode(HttpStatus.CREATED)
-  @Post()
-  create() {
+  @Post(":id")
+  create(@Param() params) {
     // @todo service artical.create
-    return "Created";
+    return params.id;
   }
 
+  // 更新文章
   @HttpCode(HttpStatus.OK)
-  @Put()
-  update() {
+  @Put(":id")
+  update(@Param() params) {
     // @todo service artical.update
-    return "Updated";
+    return params.id;
   }
-
+  
+  // 删除文章
   @HttpCode(HttpStatus.OK)
-  @Delete()
-  delete() {
+  @Delete(":id")
+  delete(@Param() params) {
     // @todo service artical.update
-    return "Deleted";
+    return params.id;
   }
 }
