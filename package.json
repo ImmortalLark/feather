@@ -27,6 +27,7 @@
     "@nestjs/microservices": "^4.6.4",
     "@nestjs/testing": "^4.6.1",
     "@nestjs/websockets": "^4.5.8",
+    "nest-controller": "0.0.1",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^5.5.6",
     "typescript": "^2.7.2"

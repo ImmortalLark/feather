@@ -1,5 +1,4 @@
 import { Controller, Post, HttpCode, HttpStatus } from "@nestjs/common";
-import ArticalMixin from "../mixins/artical.mixin";
 
 @Controller("admin")
 export default class AdminController {
